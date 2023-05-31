@@ -33,9 +33,9 @@ int recursion_tree(int a, int b)
 		return (-1);
 	if (b == 0)
 		return (1);
-	else 
+	else
 		return (x * recursion_tree(a, b - 1));
-}	
+}
 
 
 /**
