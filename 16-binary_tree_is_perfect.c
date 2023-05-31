@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+int recursion_tree(int a, int b);
 
 /**
  * binary_tree_is_perfect - a perfect tree
@@ -34,7 +35,7 @@ int recursion_tree(int a, int b)
 	if (b == 0)
 		return (1);
 	else
-		return (x * recursion_tree(a, b - 1));
+		return (a * recursion_tree(a, b - 1));
 }
 
 
