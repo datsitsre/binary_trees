@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <stdlib.h>
 
 /**
  * binary_tree_node - binray tree creation
@@ -12,7 +11,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *nodeNew;
 
-	nodeNew = malloc(binary_tree_t);
+	nodeNew = malloc(sizeof(binary_tree_t));
 
 	if (nodeNew == NULL)
 		return (NULL);
